@@ -38,7 +38,7 @@ Turn partition into table and vice versa No data move - just data dictionary upd
 
 Oracle also allows partitioning based on foreign keys.
 
-**Deal with Upate **
+**Deal with Upate**
 
 updating the partition key isn't a plain update, but means physically moving the row from one partition to the other. If you do it very often, it can hurt.
 
