@@ -18,13 +18,13 @@ We also have **partition key** to index the partitions.
 
 * Problems
 
-  ![Screen Shot 2018-06-22 at 7.36.46 PM](/Users/gongyue/Desktop/DatabaseNotes/lecture12/images/Screen Shot 2018-06-22 at 7.36.46 PM.png)
+  ![Screen Shot 2018-06-22 at 7.36.46 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 7.36.46 PM.png)
 
   **Use Subpartitioning**
 
-  ![Screen Shot 2018-06-22 at 7.37.29 PM](/Users/gongyue/Desktop/DatabaseNotes/lecture12/images/Screen Shot 2018-06-22 at 7.37.29 PM.png)
+  ![Screen Shot 2018-06-22 at 7.37.29 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 7.37.29 PM.png)
 
-  ![Screen Shot 2018-06-22 at 7.47.33 PM](/Users/gongyue/Desktop/DatabaseNotes/lecture12/images/Screen Shot 2018-06-22 at 7.47.33 PM.png)
+  ![Screen Shot 2018-06-22 at 7.47.33 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 7.47.33 PM.png)
 
 ### What's behind the partitioning?
 
@@ -42,11 +42,11 @@ updating the partition key isn't a plain update, but means physically moving the
 
 ### Archiving
 
-![Screen Shot 2018-06-22 at 8.10.26 PM](/Users/gongyue/Desktop/DatabaseNotes/lecture12/images/Screen Shot 2018-06-22 at 8.10.26 PM.png)
+![Screen Shot 2018-06-22 at 8.10.26 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 8.10.26 PM.png)
 
 Great explanation about [oracle archive mode](https://www.youtube.com/watch?v=NYIZ_pR2asU) on the YouTube
 
-![Screen Shot 2018-06-22 at 8.17.10 PM](/Users/gongyue/Desktop/DatabaseNotes/lecture12/images/Screen Shot 2018-06-22 at 8.17.10 PM.png)
+![Screen Shot 2018-06-22 at 8.17.10 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 8.17.10 PM.png)
 
 ### User Management
 
