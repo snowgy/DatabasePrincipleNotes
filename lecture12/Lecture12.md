@@ -18,13 +18,15 @@ We also have **partition key** to index the partitions.
 
 * Problems
 
-  ![Screen Shot 2018-06-22 at 7.36.46 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 7.36.46 PM.png)
+  when you have **concurrency** (several processes) it can be an issue, because if everybody is adding rows to the **same block** other processes have to be kept on hold while one process is writing bytes. 
 
   **Use Subpartitioning**
 
-  ![Screen Shot 2018-06-22 at 7.37.29 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 7.37.29 PM.png)
+  Subpartitioning, supported by some database systems, is a possible solution. You can say that every row that contains a date in June 2018 should go to one table, but compute a hash value on some other column to determine a subpart. 
 
-  ![Screen Shot 2018-06-22 at 7.47.33 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 7.47.33 PM.png)
+  **The relational theory knows no order Ordering destroys symmetry**
+
+  It's worth repeating that the relational theory knows **no order**. If you begin to physically order your rows, whether by really ordering them (_cluster index_) or more simply grouping them (partitioning) you are destroying symmetry by favoring one type of database operations (some queries, inserts) at the expense of other types of operations. You must make sure that what will suffer isn't, and won't become, important. 
 
 ### What's behind the partitioning?
 
@@ -36,17 +38,18 @@ Turn partition into table and vice versa No data move - just data dictionary upd
 
 Oracle also allows partitioning based on foreign keys.
 
-**Deal with Upate **
+**Deal with Upate**
 
 updating the partition key isn't a plain update, but means physically moving the row from one partition to the other. If you do it very often, it can hurt.
 
 ### Archiving
 
-![Screen Shot 2018-06-22 at 8.10.26 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 8.10.26 PM.png)
+Old data can be archived. Use less expensive material to store them
+
+* This is an area where partitioning by date can help a lot. You archive and drop the oldest partition, and creae a new one (beware of foreign keys!) 
+* Alternatively, you can use a fixed number of partitions (for instance one per month or week) in a circular way. 
 
 Great explanation about [oracle archive mode](https://www.youtube.com/watch?v=NYIZ_pR2asU) on the YouTube
-
-![Screen Shot 2018-06-22 at 8.17.10 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture12/images/Screen Shot 2018-06-22 at 8.17.10 PM.png)
 
 ### User Management
 
@@ -145,7 +148,6 @@ grant rank_and_file to john_doe
 
    Back up log files is known as **incremental backup**
 
-   ![Screen Shot 2018-06-23 at 10.17.12 AM](/Users/gongyue/Desktop/screenshot/Screen Shot 2018-06-23 at 10.17.12 AM.png)
 
 **Advantages**
 
