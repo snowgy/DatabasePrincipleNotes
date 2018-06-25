@@ -43,17 +43,17 @@ Consider **Long Term** and **Additional Data**, we'll have to deal with possibly
 
 _**not "real time" data uploading schedule**_
 
-![1](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/1.jpg?raw=true)
+![image1](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/1.jpg?raw=true)
 
 **Break 3NF**
 
-![3](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/3.png)
+![image2](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/3.png)
 
 **Facts and Dimensions**
 
-![4](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/4.png)
+![image3](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/4.png)
 
-![2](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/2.png)
+![image4](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/2.png)
 
 > Kimball's reasoning is the following: if I store a date column, that will be difficult to query. If I want to aggregate by date or month, I'll need to apply (complicated and different in all DBMS products) date functions that I'll never be able to index because most date functions are NOT determininistic. The day is likely to be my smallest time unit. What are 20 years, with one row per day? Under 7,000 rows? Very tiny today. Let's have one row per date, and decline each date under every possible form, and index every column. 
 
