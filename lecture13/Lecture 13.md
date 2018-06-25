@@ -43,7 +43,7 @@ Consider **Long Term** and **Additional Data**, we'll have to deal with possibly
 
 _**not "real time" data uploading schedule**_
 
-![1](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/1.jpg)
+![1](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture13/images/1.jpg?raw=true)
 
 **Break 3NF**
 
