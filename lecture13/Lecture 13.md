@@ -41,17 +41,19 @@ Consider **Long Term** and **Additional Data**, we'll have to deal with possibly
 
 > This repository should be distinct from operational databases not only because the schema might be different, but because the query patterns will be very different, with almost no repeated queries (or repeated only once a day, week or month) 
 
-![Screen Shot 2018-06-25 at 12.03.40 PM](/Users/gongyue/Desktop/DatabasePrincipleNotes/lecture13/images/Screen Shot 2018-06-25 at 12.03.40 PM.png)
-
 _**not "real time" data uploading schedule**_
+
+![1](/Users/gongyue/Desktop/DatabasePrincipleNotes/lecture13/images/1.png)
 
 **Break 3NF**
 
-![Screen Shot 2018-06-25 at 1.12.52 PM](/Users/gongyue/Desktop/Screen Shot 2018-06-25 at 1.12.52 PM.png)
+![3](/Users/gongyue/Desktop/DatabasePrincipleNotes/lecture13/images/3.png)
 
-**Facts and Dimensions**![Screen Shot 2018-06-25 at 1.13.27 PM](/Users/gongyue/Desktop/Screen Shot 2018-06-25 at 1.13.27 PM.png)
+**Facts and Dimensions**
 
-![Screen Shot 2018-06-25 at 1.13.36 PM](/Users/gongyue/Desktop/Screen Shot 2018-06-25 at 1.13.36 PM.png)
+![4](/Users/gongyue/Desktop/DatabasePrincipleNotes/lecture13/images/4.png)
+
+![2](/Users/gongyue/Desktop/DatabasePrincipleNotes/lecture13/images/2.png)
 
 > Kimball's reasoning is the following: if I store a date column, that will be difficult to query. If I want to aggregate by date or month, I'll need to apply (complicated and different in all DBMS products) date functions that I'll never be able to index because most date functions are NOT determininistic. The day is likely to be my smallest time unit. What are 20 years, with one row per day? Under 7,000 rows? Very tiny today. Let's have one row per date, and decline each date under every possible form, and index every column. 
 
