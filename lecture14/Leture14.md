@@ -50,7 +50,7 @@ For range scans, it matters. With the same number of distinct keys in two indexe
 
 **Lower** clustering factor = **Fewer** blocks to fetch and inspect 
 
-![Screen Shot 2018-06-25 at 9.01.33 PM](https://raw.githubusercontent.com/snowgy/DatabasePrincipleNotes/master/lecture14/images/ScreenShot2018-06-25at9.01.33PM.png)
+![Screen Shot 2018-06-25 at 9.01.33 PM](https://raw.githubusercontent.com/snowgy/DatabasePrincipleNotes/master/lecture14/images/1.png)
 
 **NUM_BUCKETS**
 
