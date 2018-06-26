@@ -2,7 +2,7 @@
 
 ### What can the optimizer do to improve stability?
 
-* Feed back loop![Screen Shot 2018-06-25 at 11.03.36 PM](/Users/gongyue/Desktop/Screen Shot 2018-06-25 at 11.03.36 PM.png)
+* Feed back loop![Screen Shot 2018-06-25 at 11.03.36 PM](https://raw.githubusercontent.com/snowgy/DatabasePrincipleNotes/master/lecture15/Screen Shot 2018-06-25 at 11.03.36 PM.png)
   * One problem of course is this is a reactive, and not proactive, plan improvement. You must have a painful execution to learn about the problem. 
 * Adaptive Cursor Sharing
   * Oracle has introduced a mechanism in version 11. If a parameter is bound **as a search criterion**and there is a **histogram that indicates possible problems**, a query is checked. If a problem occurs, the plan will be re- evaluated when parameters change. 
