@@ -21,9 +21,9 @@ One great illustration [blog](https://www.cnblogs.com/LBSer/p/3322630.html)
 
 **Star Transformation**
 
-![Screen Shot 2018-06-25 at 4.03.06 PM](/Users/gongyue/Desktop/Screen Shot 2018-06-25 at 4.03.06 PM.png)
+![Screen Shot 2018-06-25 at 4.03.06 PM](https://raw.githubusercontent.com/snowgy/DatabasePrincipleNotes/master/lecture14/images/ScreenShot2018-06-25at4.03.06PM.png)
 
-![Screen Shot 2018-06-25 at 4.03.50 PM](/Users/gongyue/Desktop/Screen Shot 2018-06-25 at 4.03.50 PM.png)
+![Screen Shot 2018-06-25 at 4.03.50 PM](https://raw.githubusercontent.com/snowgy/DatabasePrincipleNotes/master/lecture14/images/ScreenShot2018-06-25at4.03.50PM.png)
 
 ### Precomputing aggregates
 
@@ -50,7 +50,7 @@ For range scans, it matters. With the same number of distinct keys in two indexe
 
 **Lower** clustering factor = **Fewer** blocks to fetch and inspect 
 
-![Screen Shot 2018-06-25 at 9.01.33 PM](https://github.com/snowgy/DatabasePrincipleNotes/tree/master/lecture14/images/ScreenShot2018-06-25at9.01.33PM.png)
+![Screen Shot 2018-06-25 at 9.01.33 PM](https://raw.githubusercontent.com/snowgy/DatabasePrincipleNotes/master/lecture14/images/ScreenShot2018-06-25at9.01.33PM.png)
 
 **NUM_BUCKETS**
 
